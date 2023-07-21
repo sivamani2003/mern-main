@@ -111,7 +111,7 @@ const Footer = () => {
           </ListGroup>
         </Col>
         <Col lg='12' className="text-center pt-5">
-          <p className="copyright">Copyright {year},design and develop by Siva Mani. All rights reserved.</p>
+          <p className="copyright">Copyright {year},design and develop by Siva Mani and Harshini All rights reserved.</p>
         </Col>
       </Row>
     </Container>
