@@ -1,9 +1,11 @@
-import React,{useRef,useEffect} from 'react'
+import React,{useRef,useEffect,useContext} from 'react'
 import {Container,Row,Button} from 'reactstrap'
 import { NavLink,Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import {AiOutlineMenu} from 'react-icons/ai'
 import './header.css'
+import {AuthContext} from './../context/AuthContext'
+import {BASE_URL} from './../utils/config'
 const nav__links=[
   {
     path:'./home',
