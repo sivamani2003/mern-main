@@ -5,7 +5,6 @@ import userFetch from '../../hooks/userFetch'
 import { BASE_URL } from '../../utils/config'
 const FeaturedTourList = () => {
   const {data:featuredTours,loading,error}=userFetch(`${BASE_URL}/tours/search/getFeaturedTours`)
-  console.log(featuredTours);
   return<>
     {
       loading && <h4>Loading.............</h4>
