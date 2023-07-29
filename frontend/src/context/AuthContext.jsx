@@ -3,10 +3,12 @@ import React from 'react';
 
 const userFromLocalStorage = localStorage.getItem('user');
 const initial_state = {
-  user: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null,
+  user: localStorage.getItem('user') !== null ? JSON.parse(localStorage.getItem('user')) : null,
   loading: false,
   error: null
 };
+
+console.log(initial_state)
 
 export const AuthContext = createContext(initial_state);
 
