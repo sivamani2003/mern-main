@@ -38,7 +38,7 @@ const ToursDeatils = () => {
       }
   
       const reviewObj = {
-        username: user?.username,
+        username: user.data.username,
         reviewText,
         rating: tourRating
       };
@@ -142,7 +142,7 @@ const ToursDeatils = () => {
                             <div className="d-flex align-items-center justify-content-between">
                                 <div>
                                   <h5>{reviews.username}</h5>
-                                  <p>{new Date('03-07-2023').toLocaleDateString("en-US",options
+                                  <p>{new Date(reviews.createdAt).toLocaleDateString("en-US",options
                                   )}</p>
                                 </div>
                                 <span className="d-flex align-items-center">

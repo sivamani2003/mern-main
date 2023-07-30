@@ -42,12 +42,12 @@ const Login = () => {
 
       dispatch({ type: 'LOGIN_SUCCESSS', payload: result.data });
       navigate('/');
-      navigate(0)
+      navigate(0);
+      
     } catch (err) {
       dispatch({ type: 'LOGIN_FAILURE', payload: err.message });
     }
   };
-
   return (
     <section>
       <Container>
