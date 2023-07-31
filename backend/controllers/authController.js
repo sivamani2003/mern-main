@@ -42,7 +42,6 @@ export const register = async (req, res) => {
     res.status(500).json({ success: false, message: 'Failed to create. Try again' });
   }
 };
-
 export const login = async (req, res) => {
   const email = req.body.email;
   try {

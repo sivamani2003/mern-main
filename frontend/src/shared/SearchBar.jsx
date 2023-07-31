@@ -30,7 +30,7 @@ const SearchBar = () => {
         <Form className="d-flex align-items-center gap-4">
           <FormGroup className="d-flex gap-3 form__group form__group-fast">
               <span>
-                <i class="ri-map-pin-line"></i>
+                <i className="ri-map-pin-line"></i>
               </span>
               <div>
                 <h6>Location</h6>

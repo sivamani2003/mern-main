@@ -25,7 +25,7 @@ const Header = () => {
   const navigate = useNavigate()
   const { user, dispatch } = useContext(AuthContext)
 
-  console.log("user",user)
+
 
   const logout = () => {
     dispatch({ type: 'LOGOUT' })

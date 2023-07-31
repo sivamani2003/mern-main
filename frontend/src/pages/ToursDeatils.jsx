@@ -84,7 +84,7 @@ const ToursDeatils = () => {
                 <div className="d-flex align-items-center gap-5">
                   <span className="d-flex align-items-center gap-1">
                     <span className="tour__rating d-flex align-items-center gap-1">
-                      <i class="ri-star-fill" style={{ 'color': 'var(--secondary-color)' }}></i>
+                      <i className="ri-star-fill" style={{ 'color': 'var(--secondary-color)' }}></i>
                       {avgRating === 0 ? null : avgRating}
                       {totalRating === 0 ? (
                         "Not rated"
@@ -94,14 +94,14 @@ const ToursDeatils = () => {
                     </span>
                   </span>
                   <span>
-                    <i class="ri-map-pin-user-fill"></i>{address}
+                    <i className="ri-map-pin-user-fill"></i>{address}
                   </span>
                 </div>
                 <div className="tour__extra-details">
-                  <span><i class='ri-map-pin-2-fill'></i>{city}</span>
-                  <span><i class="ri-money-dollar-circle-line"></i>${price}/per person</span>
-                  <span><i class="ri-map-pin-time-line"></i>{distance}k/m</span>
-                  <span><i class="ri-group-line"></i>{maxGroupSize}people</span>
+                  <span><i className='ri-map-pin-2-fill'></i>{city}</span>
+                  <span><i className="ri-money-dollar-circle-line"></i>${price}/per person</span>
+                  <span><i className="ri-map-pin-time-line"></i>{distance}k/m</span>
+                  <span><i className="ri-group-line"></i>{maxGroupSize}people</span>
                 </div>
                 <h5>Description</h5>
                 <p>{desc}</p>
@@ -111,19 +111,19 @@ const ToursDeatils = () => {
                 <Form onSubmit={submitHandler}>
                   <div className="d-flex align-items-center gap-3 mb-4 rating__group">
                     <span onClick={()=>setTourRating(1)}>
-                      1 <i class="ri-star-s-fill"></i>
+                      1 <i className="ri-star-s-fill"></i>
                       </span>
                     <span onClick={()=>setTourRating(2)}>
-                      2 <i class="ri-star-s-fill"></i>
+                      2 <i className="ri-star-s-fill"></i>
                       </span>
                     <span onClick={()=>setTourRating(3)}>
-                      3 <i class="ri-star-s-fill"></i>
+                      3 <i className="ri-star-s-fill"></i>
                       </span>
                     <span onClick={()=>setTourRating(4)}>
-                      4 <i class="ri-star-s-fill"></i>
+                      4 <i className="ri-star-s-fill"></i>
                       </span>
                     <span onClick={()=>setTourRating(5)}>
-                      5 <i class="ri-star-s-fill"></i>
+                      5 <i className="ri-star-s-fill"></i>
                     </span>
                   </div>
                   <div className="review__input">
@@ -146,7 +146,7 @@ const ToursDeatils = () => {
                                   )}</p>
                                 </div>
                                 <span className="d-flex align-items-center">
-                                  {reviews.rating}<i class="ri-star-s-fill"></i>
+                                  {reviews.rating}<i className="ri-star-s-fill"></i>
                                 </span>
                             </div>
                             <h6>{reviews.reviewText}</h6>
