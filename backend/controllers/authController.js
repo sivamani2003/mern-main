@@ -2,8 +2,6 @@ import User from '../models/User.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { body, validationResult } from 'express-validator';
-
-// Validation rules for register route
 export const registerValidationRules = () => {
   return [
     body('username').notEmpty().withMessage('Username is required'),
@@ -14,13 +12,11 @@ export const registerValidationRules = () => {
 
 export const register = async (req, res) => {
   try {
-    // Check for validation errors
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
 
-    // Check if the user with this email address exists
     const user = await User.findOne({ email: req.body.email });
     if (user) {
       return res.status(400).json({ error: 'Email already exists' });
