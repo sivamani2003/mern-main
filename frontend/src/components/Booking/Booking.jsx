@@ -66,7 +66,7 @@ const Booking = ({ tour, avgRating }) => {
                 </FormGroup>
                 <FormGroup className="d-flex align-items-center gap-3">
                     <input type="date" placeholder="" id="bookAt" required onChange={handleChange}/>
-                    <input type="number" placeholder="" id="guestSize" required onChange={handleChange}/>
+                    <input type="number" placeholder="No of persons" id="guestSize" required onChange={handleChange}/>
                 </FormGroup>
             </Form>
         </div>
@@ -74,7 +74,7 @@ const Booking = ({ tour, avgRating }) => {
             <ListGroup>
                 <ListGroupItem className="border-0 px-0">
                     <h5 className="d-flex align-items-center gap-1">
-                        ${price}<i class="ri-close-line"></i>1 Person
+                        ${price}<i className="ri-close-line"></i>1 Person
                     </h5>
                     <span>${price}</span>
                 </ListGroupItem>
