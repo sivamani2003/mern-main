@@ -40,7 +40,7 @@ const Header = () => {
       }
     })
   }
-
+  console.log(user)
   useEffect(() => {
     stickyHeaderFunc()
     return window.removeEventListener('scroll', stickyHeaderFunc)
@@ -69,6 +69,7 @@ const Header = () => {
               {user ? (
                 <>
                   <h5 className='mb-0'>{user.data.username}</h5>
+
                   <Button className='btn btn-dark' onClick={logout}>Logout</Button>
                 </>
               ) : (
